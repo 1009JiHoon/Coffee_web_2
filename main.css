@@ -1,0 +1,189 @@
+body {
+    font-family: "Diphylleia", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 4000px;
+}
+
+.inner {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header > .inner {
+    height: 120px;
+    background-color: beige;
+}
+
+header .logo {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .sub-menu {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: flex;
+    height: 40px;
+}
+
+header .sub-menu > ul {
+    align-items: center;
+    display: flex;
+}
+
+header .sub-menu > ul li {
+    position: relative;
+    padding: 0px 10px; /* 여백을 조정하여 경계선과의 간격 조절 */
+}
+
+header .sub-menu > ul li::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: black;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+header .sub-menu > ul li:first-child::before {
+    display: none; /* 첫 번째 li의 경계선 숨김 */
+}
+
+header .sub-menu .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 5px 0 0 ;
+}
+
+header .sub-menu .search > input {
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    transition: 0.6s;
+}
+
+header .sub-menu .search > input:focus {
+    width:180px;
+}
+
+header .sub-menu .search .material-icons {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .sub-menu .search.focused .material-icons {
+    display: none;
+}
+
+header .main-menu {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
+header .main-menu > ul {
+    display: flex;
+}
+
+header .main-menu .item {
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+header .main-menu .item:hover {
+    color: orange;
+    background-color: black;
+}
+
+header .main-menu .item .item_contents {
+    display: none;
+}
+
+header .main-menu .item:hover .item_contents {
+    display: block;
+}
+
+header .main-menu .item .item_contents {
+    position: fixed;
+    left: 0;
+    top: 120px;
+    width: 100%;
+    background-color: black;
+}
+
+header .main-menu .item .item_contents .contents_menu > ul {
+    display: flex;
+    padding: 10px;
+}
+
+header .main-menu .item .item_contents .contents_menu > ul li {
+    width: 220px;
+}
+
+header .main-menu .item .item_contents .contents_menu > ul li h4 {
+    padding: 10px 0;
+    font-size: 22px;
+    color: white;
+}
+
+header .main-menu .item .item_contents .contents_menu > ul li > ul li {
+    padding: 5px 0;
+    color: lightcyan;
+}
+
+header .main-menu .item .item_contents .contents_texture {
+    background-image: url(./images/main_menu_pattern.jpg);
+}
+
+header .main-menu .item .item_contents .contents_texture .inner {
+    padding: 10px;
+}
+
+header .main-menu .item .item_contents .contents_texture .inner > h4 {
+    padding: 5px 0;
+    font-size: 16px;
+    color: white;
+}
+
+header .main-menu .item .item_contents .contents_texture .inner > p {
+    padding: 5px 0;
+    font-size: 14px;
+    color: lightcyan;
+}
+
+header .badges {
+    position: fixed;
+    top: 132px;
+    right: 38px;
+}
+
+header .badges .badge {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
