@@ -29,3 +29,12 @@ window.addEventListener('scroll', function(){
         });
     }
 });
+
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+
+fadeEls.forEach(function(fadeEl, index){
+    gsap.to(fadeEl, 1, {
+        delay : 0.7 * (index + 1),
+        opacity : 1
+    });
+});

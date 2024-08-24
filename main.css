@@ -11,7 +11,7 @@ a {
 
 header {
     width: 100%;
-    height: 4000px;
+    z-index: 99;
 }
 
 .inner {
@@ -186,4 +186,84 @@ header .badges .badge {
 
 img {
     display: block;
+}
+
+.btn {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: 900;
+    width: 130px;
+    text-align: center;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.btn.btn--brown {
+    color: brown;
+    border-color: brown;
+}
+
+.btn.btn--brown:hover {
+    color: white;
+    background-color: brown;
+}
+
+.visual {
+    background-image: url(./images/visual_bg.jpg);
+    background-position: center;
+}
+
+.visual > .inner {
+    height: 646px;
+}
+
+.visual .title {
+    position: absolute;
+    left: 10px;
+}
+
+.visual .btn.btn--brown {
+    position: absolute;
+    top: 220px;
+    left: 140px;
+}
+
+.visual .cup1.image {
+    position: absolute;
+    right: -30px;
+}
+
+.visual .cup1.text {
+    position: absolute;
+    top: 80px;
+    right: 220px;
+}
+
+.visual .cup2.image {
+    position: absolute;
+    right: 190px;
+    top: 120px;
+}
+
+.visual .cup2.text {
+    position: absolute;
+    right: 460px;
+    top: 240px;
+}
+
+.visual .spoon {
+    position: absolute;
+    top: 320px;
+    left: 180px;
+}
+
+.fade-in {
+    opacity: 0;
 }
