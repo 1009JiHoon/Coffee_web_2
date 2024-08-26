@@ -38,3 +38,10 @@ fadeEls.forEach(function(fadeEl, index){
         opacity : 1
     });
 });
+
+const swiper = new Swiper('.notice .swiper', {
+    direction : 'vertical',
+    loop : true,
+    autoplay : true
+});
+

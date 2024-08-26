@@ -10,8 +10,11 @@ a {
 }
 
 header {
+    position: fixed;
+    top: 0;
     width: 100%;
     z-index: 99;
+    background-color: white;
 }
 
 .inner {
@@ -216,6 +219,7 @@ img {
 }
 
 .visual {
+    margin-top: 120px;
     background-image: url(./images/visual_bg.jpg);
     background-position: center;
 }
@@ -266,4 +270,65 @@ img {
 
 .fade-in {
     opacity: 0;
+}
+
+.notice {
+    position: relative;
+}
+
+.notice .bg-left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    background-color: black;
+}
+
+.notice .bg-right {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    background-color: white;
+}
+
+.notice > .inner {
+    height: 62px;
+}
+
+.notice .inner-left {
+    display: flex;
+    width: 70%;
+    background-color: black;
+    align-items: center;
+}
+
+.notice .inner-left h4 {
+    color: white;
+    margin-right: 20px;
+}
+
+.notice .swiper {
+    flex-grow: 1;
+    height: 62px;
+}
+
+.notice .notice_circle {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notice .notice_circle .material-icons {
+    color: white;
+    font-size: 30px;
+}
+
+.notice .swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
