@@ -294,6 +294,7 @@ img {
 
 .notice > .inner {
     height: 62px;
+    display: flex;
 }
 
 .notice .inner-left {
@@ -331,4 +332,99 @@ img {
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.notice .inner-right {
+    display: flex;
+    width: 30%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.notice .inner-right h2 {
+    margin-right: 20px;
+}
+
+.notice .inner-right .material-icons {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.promotion {
+    position: relative;
+    height: 663px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.promotion .swiper {
+    height: 553px;
+    width: calc(819px * 3 + 10px * 2);
+    flex-shrink: 0;
+}
+
+.promotion.hide {
+    height: 0;
+}
+
+.promotion .swiper-slide {
+    position: relative;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+.promotion .swiper-slide-active {
+    opacity: 1;
+}
+
+.promotion .swiper-slide .btn {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.promotion .swiper-pagination {
+    bottom: 40px !important; 
+}
+
+.promotion .swiper-pagination .swiper-pagination-bullet {
+    background-image: url(./images/promotion_slide_pager.png);
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
+}
+
+.promotion .swiper-pagination .swiper-pagination-bullet-active {
+    background-image: url(./images/promotion_slide_pager_on.png);
+}
+
+.promotion .swiper-button-prev, .promotion .swiper-button-next {
+    width: 42px;
+    height: 42px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.promotion .swiper-button-prev::after, .promotion .swiper-button-next::after {
+    display: none;
+}
+
+.promotion .swiper-button-prev:hover, .promotion .swiper-button-next:hover {
+    background-color: black;
+    color: white;
+}
+
+.promotion .swiper-button-prev {
+    top: 78%;
+    left: 12%;
+}
+
+.promotion .swiper-button-next {
+    top: 78%;
+    right: 12%;
 }

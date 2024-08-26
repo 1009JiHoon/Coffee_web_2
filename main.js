@@ -45,3 +45,31 @@ const swiper = new Swiper('.notice .swiper', {
     autoplay : true
 });
 
+const promotionBTN = document.querySelector('.notice .inner-right .material-icons');
+const promotion = document.querySelector('.promotion');
+
+promotionBTN.addEventListener('click', function(){
+    if(promotion.classList.contains('hide')){
+        promotion.classList.remove('hide');
+    }
+    else {
+        promotion.classList.add('hide');
+    }
+});
+
+
+new Swiper('.promotion .swiper', {
+    loop : true,
+    autoplay : true,
+    slidesPerView : 3,
+    spaceBetween : 10,
+    centeredSlides : true,
+    pagination : {
+        el : '.promotion .swiper-pagination',
+        clickable : true
+    },
+    navigation : {
+        prevEl : '.promotion .swiper-button-prev',
+        nextEl : '.promotion .swiper-button-next'
+    }
+});
