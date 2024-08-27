@@ -73,3 +73,30 @@ new Swiper('.promotion .swiper', {
         nextEl : '.promotion .swiper-button-next'
     }
 });
+
+gsap.to('.floating1', 2, {
+    delay : 1,
+    y: 25,
+    repeat: -1,
+    rotation: 27,
+    yoyo: true,
+    ease: Power1.easeInOut
+});
+
+gsap.to('.floating2', 2, {
+    delay : 1,
+    x: 25,
+    repeat: -1,
+    rotation: 42,
+    yoyo: true,
+    ease: Power1.easeInOut
+});
+
+gsap.to('.floating3', 5, {
+    delay : 1,
+    y: 125,
+    repeat: -1,
+    rotation: 360,
+    yoyo: true,
+    ease: 'bounce.out'
+});

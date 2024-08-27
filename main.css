@@ -428,3 +428,118 @@ img {
     top: 78%;
     right: 12%;
 }
+
+.rewards {
+    position: relative;
+}
+
+.rewards .bg-left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #272727;
+    left: 0;
+    top: 0;
+}
+
+.rewards .bg-right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #d5c798;
+    right: 0;
+    top: 0;
+}
+
+.rewards .inner {
+    height: 241px;
+}
+
+.rewards .btn-group {
+    width: 250px;
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rewards .btn.sign-up {
+    width: 130px;
+    margin-right: 10px;
+}
+
+.rewards .btn.sign-in {
+    width: 110px;
+}
+
+.rewards .btn.gift {
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.btn.btn--reverse {
+    color: white;
+    background-color: black;
+}
+
+.btn.btn--reverse:hover {
+    color: black;
+    background-color: transparent;
+}
+
+.youtube {
+    position: relative;
+    height: 700px;
+    background-color: #272727;
+    overflow: hidden;
+}
+
+.youtube .youtube_area {
+    --width : 1920px;
+    position: absolute;
+    width: var(--width);
+    height: calc(var(--width) * 9 / 16);
+    top: 50%;
+    left: 50%;
+    margin-left: calc(var(--width) / -2);
+    margin-top: calc(var(--width) * 9 / 16 / -2);
+}
+
+#player {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.youtube .youtube_cover {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.15);
+    background-image: url(./images/video_cover_pattern.png);
+}
+
+.youtube .inner {
+    height: 100%;
+}
+
+.youtube .floating1 {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.youtube .floating2 {
+    position: absolute;
+    top: 350px;
+    left: -30px;
+}
+
+.youtube .floating3 {
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
