@@ -94,7 +94,7 @@ gsap.to('.floating2', 2, {
 
 gsap.to('.floating3', 5, {
     delay : 1,
-    y: 125,
+    y: -225,
     repeat: -1,
     rotation: 360,
     yoyo: true,
