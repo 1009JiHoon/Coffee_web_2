@@ -650,6 +650,43 @@ img {
 
 .reserve-store .inner {
     height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserve-store .medal {
+    width: 334px;
+    height: 334px;
+    perspective: 900px;
+}
+
+.reserve-store .medal .front {
+    position: absolute;
+    transition: 1s;
+}
+
+.reserve-store .medal .back {
+    position: absolute;
+    transition: 1s;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+
+.reserve-store .medal:hover .front {
+    transform: rotateY(180deg);
+}
+
+.reserve-store .medal:hover .back {
+    transform: rotateY(0);
+}
+
+.reserve-store .medal .back .btn {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 240px;
+    margin: auto;
 }
 
 .find-store {
