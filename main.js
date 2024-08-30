@@ -16,16 +16,27 @@ InputEl.addEventListener('blur', function(){
 });
 
 const BadgesEl = document.querySelector('header .badges');
+const toTopEl = document.querySelector('#to-top');
 
 window.addEventListener('scroll', function(){
     if(scrollY > 500){
         gsap.to(BadgesEl, .6, {
             opacity: 0
         });
+
+        gsap.to(toTopEl, 1, {
+            opacity: 1,
+            x:0
+        });
     }
     else {
         gsap.to(BadgesEl, .6, {
             opacity: 1
+        });
+
+        gsap.to(toTopEl, 1, {
+            opacity: 0,
+            x:100
         });
     }
 });
@@ -111,4 +122,25 @@ spyEls.forEach(function(spyEl){
     })
     .setClassToggle(spyEl, 'show')
     .addTo(new ScrollMagic.Controller());
+});
+
+new Swiper('.awards .swiper', {
+    autoplay : true,
+    loop : true,
+    slidesPerView : 5,
+    spaceBetween : 10,
+    navigation : {
+        prevEl : '.awards .swiper-button-prev',
+        nextEl : '.awards .swiper-button-next',
+    }
+});
+
+const thisYear = document.querySelector('.this-year');
+
+thisYear.textContent = new Date().getFullYear();
+
+toTopEl.addEventListener('click', function(){
+    gsap.to(window, .8, {
+        scrollTo: 0
+    });
 });

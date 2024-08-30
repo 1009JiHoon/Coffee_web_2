@@ -768,3 +768,140 @@ img {
 .show .back-to-position.delay-3 {
     transition-delay: .9s;
 }
+
+.awards {
+    background-color: #272727;
+}
+
+.awards .inner {
+    padding: 20px 0;
+}
+
+.awards .swiper-button-prev::after,
+.awards .swiper-button-next::after {
+    display: none;
+}
+
+.awards .swiper-button-prev,
+.awards .swiper-button-next {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.awards .swiper-button-prev:hover,
+.awards .swiper-button-next:hover {
+    color: #272727;
+    background-color: white;
+}
+
+.awards .swiper-button-prev {
+    left: -100px;
+}
+
+.awards .swiper-button-next {
+    right: -100px;
+}
+
+footer {
+    background-color: #272727;
+    border-top: 1px solid #333;
+}
+
+footer .inner {
+    padding: 30px;
+}
+
+footer .menu {
+    display: flex;
+    justify-content: center;
+}
+
+footer .menu li a {
+    color: #999;
+    padding: 15px;
+}
+
+footer .menu li {
+    position: relative;
+}
+
+footer .menu li::before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 3px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #555
+}
+
+footer .menu li:first-child::before {
+    display: none;
+}
+
+footer .menu li a.orange {
+    color: orange;
+}
+
+footer .btn-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .btn-group .btn {
+    margin-right: 10px;
+}
+
+footer .btn-group .btn:last-child {
+    margin-right: 0;
+}
+
+footer .info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer .info span {
+    margin-right: 20px;
+    color: #999;
+}
+
+footer .info span:last-child {
+    margin-right: 0;
+}
+
+footer .copyright {
+    text-align: center;
+    color: #999;
+    margin-top: 10px;
+}
+
+footer .logo {
+    margin: 30px auto 0;
+}
+
+#to-top {
+    width: 42px;
+    height: 42px;
+    color: #999;
+    border: 2px solid #999;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#to-top:hover {
+    color: black;
+    background-color: white;
+}
